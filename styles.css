@@ -1,0 +1,82 @@
+@font-face {
+    font-family: Roboto;
+    font-weight: 300;
+    src: url(Roboto-Light.woff) format('woff');
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    font-family: Roboto, sans-serif;
+    background-color: #0e151a;
+}
+
+.form {
+    margin: 0 auto;
+    width: 500px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 30px 10px;
+    background-color: #24333c;
+    color: #748083;
+}
+
+.title {
+    font-weight: 300;
+    color: #20b38c;
+    text-align: center;
+}
+
+label {
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+input {
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    padding: 0 10px;
+    height: 30px;
+    border: 1px solid #44545c;
+    background: transparent;
+    outline: none;
+    color: #748083;
+    font-family: Roboto, sans-serif;
+}
+
+input:focus {
+    border: 1px solid #20b38c;
+}
+
+button {
+    margin-top: 20px;
+    padding: 0;
+    height: 30px;
+    background-color: #20b38c;
+    color: white;
+    border: none;
+}
+
+button:hover {
+    background-color: #1c7c6b;
+}
+
+/*Не валидные данные*/
+.warning {
+    color: rgb(233, 222, 71);
+    font-size: 12px;
+    margin: 0 0 10px;
+}
+
+.block__button {
+    background-color: #44545c;
+}
