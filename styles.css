@@ -57,6 +57,14 @@ input:focus {
     border: 1px solid #20b38c;
 }
 
+.invalid {
+    border-color: yellow;
+}
+
+.invalid:focus {
+    border-color: yellow;
+}
+
 button {
     margin-top: 20px;
     padding: 0;
@@ -70,13 +78,14 @@ button:hover {
     background-color: #1c7c6b;
 }
 
+button[disabled] {
+  background-color: #44545c;
+  color: #748083;
+}
+
 /*Не валидные данные*/
 .warning {
     color: rgb(233, 222, 71);
     font-size: 12px;
     margin: 0 0 10px;
-}
-
-.block__button {
-    background-color: #44545c;
 }

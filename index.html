@@ -7,23 +7,23 @@
     <title>Форма регистрации</title>
 </head>
 <body>
-    <div class="form">
+    <div class="form" id="form">
         <form action="">
             <h1 class="title">Регистрация</h1>
             <label for="name">Имя</label>
-            <input type="text" name="name" id="first-name">
-            <p class="warning">Использованы недопустимые символы!</p>
+            <input type="text" name="name" id="first-name" maxlength="40">
+            <!-- <p class="warning">Использованы недопустимые символы!</p> -->
             <label for="surname">Фамилия</label>
-            <input type="text" name="surname" id="last-name">
+            <input type="text" name="surname" id="last-name" maxlength="40">
             <label for="email">E-mail</E-mail></label>
             <input type="email" name="email" id="email">
             <label for="password">Пароль</label>
-            <input type="password" name="password" id="password">
+            <input type="password" name="password" id="password" minlength="8">
             <label for="confirm-password">Подтверждение пароля</label>
-            <input type="password" name="confirm-password" id="password-confirm">
+            <input type="password" name="password-confirm" id="password-confirm">
             <label for="date-of-birth">Дата рождения</label>
             <input type="date" name="date-of-birth" id="birth-day">
-            <button type="submit" id="form-button">Отправить</button>
+            <button class="" type="submit" id="form-button" disabled>Отправить</button>
         </form>
     </div>
     <script src="index.js"></script>
