@@ -94,7 +94,7 @@ password.addEventListener("input", (event) => {
   const warningTextPass =
     userPassword === ""
       ? "Поле не должно быть пустым!"
-      : `Пароль должен иметь минимальную длинну 8 символов, 
+      : `Пароль должен иметь минимальную длину 8 символов, 
     содержать хотя бы одну заглавную и строчную буквы, 
     содержать хотя бы одну цифру, 
     содержать хотя бы один символ`;
@@ -135,7 +135,7 @@ birthDay.addEventListener("input", (event) => {
   const errorType =
     userBirthDay === ""
       ? "Поле не должно быть пустым!"
-      : "Дата должна быть заполнена по форме 01.01.2024: 2 цыфры даты, 2 цыфры месяца, 4 цыфры года";
+      : "Дата должна быть заполнена по форме 01.01.2024: 2 цифры даты, 2 цифры месяца, 4 цифры года";
   setWarningText(status, errorType, "incorrect_date-of-birth");
   addStatus(status, input);
   if (isAdult(userBirthDay) === false) {
