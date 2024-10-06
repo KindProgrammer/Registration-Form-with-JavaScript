@@ -44,7 +44,7 @@ const submitBtn = document.getElementById("form-button");
 firstName.addEventListener("input", (event) => {
   const input = event.target;
   const userName = input.value.trim().toLowerCase();
-  const status = /^[a-zA-Zа-яёА-ЯЁ]+$/.test(userName);
+  const status = /^([a-zA-Zа-яёА-ЯЁ]+[-]?[a-zA-Zа-яёА-ЯЁ]+|[a-zA-Zа-яёА-ЯЁ]+)$/.test(userName);
   const warningText =
     userName === ""
       ? "Поле не должно быть пустым!"
@@ -57,7 +57,7 @@ firstName.addEventListener("input", (event) => {
 lastName.addEventListener("input", (event) => {
   const input = event.target;
   const userSurname = input.value.trim().toLowerCase();
-  const status = /^[a-zA-Zа-яёА-ЯЁ]+$/.test(userSurname);
+  const status = /^([a-zA-Zа-яёА-ЯЁ]+[-]?[a-zA-Zа-яёА-ЯЁ]+|[a-zA-Zа-яёА-ЯЁ]+)$/.test(userSurname);
   const warningText =
     userSurname === ""
       ? "Поле не должно быть пустым!"
