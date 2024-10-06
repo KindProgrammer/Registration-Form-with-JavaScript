@@ -8,25 +8,25 @@
 </head>
 <body>
     <div class="form">
-        <form action="" autocomplete="off" id="form">
+        <form action="#" autocomplete="off" id="form">
             <h1 class="title">Регистрация</h1>
-            <label for="name">Имя</label>
-            <input type="text" name="name" id="first-name" maxlength="40">
+            <label for="first-name">Имя</label>
+            <input type="text" id="first-name" maxlength="40">
             <p class="warning_text incorrect_name"></p>
-            <label for="surname">Фамилия</label>
-            <input type="text" name="surname" id="last-name" maxlength="40">
+            <label for="last-name">Фамилия</label>
+            <input type="text" id="last-name" maxlength="40">
             <p class="warning_text incorrect_surname"></p>
-            <label for="email">E-mail</E-mail></label>
-            <input type="email" name="email" id="email">
+            <label for="email">E-mail</label>
+            <input type="email" id="email">
             <p class="warning_text incorrect_email"></p>
             <label for="password">Пароль</label>
-            <input type="password" name="password" id="password" minlength="8">
+            <input type="password" id="password" minlength="8">
             <p class="warning_text incorrect_pass"></p>
-            <label for="confirm-password">Подтверждение пароля</label>
-            <input type="password" name="password-confirm" id="password-confirm">
+            <label for="password-confirm">Подтверждение пароля</label>
+            <input type="password" id="password-confirm">
             <p class="warning_text incorrect_pass-confirm"></p>
-            <label for="date-of-birth">Дата рождения</label>
-            <input type="date" name="date-of-birth" id="birth-day" min="1890-01-01" max="3000-01-01">
+            <label for="birth-day">Дата рождения</label>
+            <input type="date" id="birth-day" min="1890-01-01" max="2150-01-01">
             <p class="warning_text incorrect_date-of-birth"></p>
             <button class="" type="submit" id="form-button" disabled>Отправить</button>
         </form>
